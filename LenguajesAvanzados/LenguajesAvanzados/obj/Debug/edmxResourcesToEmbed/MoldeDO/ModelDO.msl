@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VentasModelStoreContainer" CdmEntityContainer="VentasEntities">
+    <FunctionImportMapping FunctionImportName="salesPerProducts" FunctionName="VentasModel.Store.salesPerProducts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="VentasModel.salesPerProducts_Result1">
+          <ScalarProperty Name="Producto" ColumnName="Producto" />
+          <ScalarProperty Name="Max_Ventas" ColumnName="Max/Ventas" />
+          <ScalarProperty Name="Total_Venta" ColumnName="Total/Venta" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="verDetalleFactura" FunctionName="VentasModel.Store.verDetalleFactura">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="VentasModel.verDetalleFactura_Result">
+          <ScalarProperty Name="C__Factura" ColumnName="# Factura" />
+          <ScalarProperty Name="Producto" ColumnName="Producto" />
+          <ScalarProperty Name="Precio_U" ColumnName="Precio/U" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

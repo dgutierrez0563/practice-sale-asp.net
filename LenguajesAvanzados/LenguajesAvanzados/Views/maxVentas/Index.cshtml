@@ -1,0 +1,50 @@
+﻿@model IEnumerable<LenguajesAvanzados.MoldeDO.salesPerProducts_Result1>
+@{
+    ViewBag.Title = "Index";
+}
+<div class="panel panel-info">
+    <div class="panel-heading" style="padding-top:25px;padding-bottom:25px;">
+        <h1 class="panel-title text-center" style="font-size:20px;">Historia Ventas</h1>
+    </div>
+</div>
+
+<div class="panel panel-primary" style="margin-top:5px;">
+    <div class="panel-heading" style="padding-top:20px;padding-bottom:20px;">
+        <h2 class="panel-title text-center">Productos Vendidos</h2>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-hover">
+            <tr class="info">
+                <th>
+                    Nombre de Producto
+                </th>
+                <th>
+                    Cantidad/Producto
+                </th>
+                <th>
+                   $  Total en Ventas
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Producto)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Max_Ventas)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Total_Venta)
+                    </td>
+                </tr>
+            }
+        </table>
+        @*<a class="current_page_item">
+            @Html.ActionLink("Homepage", "Index", "Inicio")</a>*@
+        <br />
+        <a class="btn btn-primary" style="font-size:16px;" @Html.ActionLink("Homepage", "Index","Home")
+        </a>
+    </div>
+</div>

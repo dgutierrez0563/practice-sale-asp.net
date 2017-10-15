@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "HOMEPAGE";
+}
+
+<link href="~/Content/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="~/Content/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<div id="wrapper" style="margin-top:50px;">
+    <div id="menu-wrapper">
+        <div id="menu" class="container">
+            <ul>
+                <li class="current_page_item">@Html.ActionLink("Homepage", "Index", "Start")</li>
+                <li>@Html.ActionLink("Producto", "Index", "Productoes")</li>
+                <li>@Html.ActionLink("Categoria", "Index", "Categorias")</li>
+                <li>@Html.ActionLink("Cliente", "Index", "Clientes")</li>
+                <li>@Html.ActionLink("Facturar", "Index", "Facturars")</li>
+                <li>@Html.ActionLink("Proveedor", "Index", "Proveedors")</li>
+                <li>@Html.ActionLink("Vendedor", "Index", "Vendedors")</li>
+            </ul>
+        </div>
+        <!-- end #menu -->
+    </div>
+
+    <div id="portfolio-wrapper">
+        <div id="portfolio" class="container">
+           
+        </div>
+    </div>
+</div>
+<div id="menu-wrapper">
+    <div id="menu" class="container">
+       
+</div>
+</div>

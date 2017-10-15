@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Sales</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header" style="margin-left:20px;">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <strong>@Html.ActionLink("  Sales  ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</strong>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Acciones de Negocio <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Producto", "Index", "Productoes")</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Categoria", "Index", "Categorias")</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Cliente", "Index", "Clientes")</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Facturar", "Index", "Facturars")</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Proveedor", "Index", "Proveedors")</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Vendedor", "Index", "Vendedors")</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Historial de Ventas", "Index", "maxVentas")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Us <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li class="divider"></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right:20px;">
+                    @Html.Partial("_LoginPartial")
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content" style="background-color:lightgray;">
+        @RenderBody()
+        <hr style="border-color:red;" />
+        <footer class="panel-footer" style="padding-top:20px;padding-bottom:10px">
+            <p>&copy; All Rights Reserved - WSULLIVAN  @DateTime.Now.Year - Flauros W.S</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

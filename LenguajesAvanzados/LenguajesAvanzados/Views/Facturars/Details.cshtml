@@ -1,0 +1,42 @@
+﻿@model LenguajesAvanzados.Models.Facturar
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Facturar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Clientes.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clientes.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vendedors.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vendedors.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCreado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCreado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDFactura }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
