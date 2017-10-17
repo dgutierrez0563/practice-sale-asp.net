@@ -22,6 +22,18 @@ namespace LenguajesAvanzados.Controllers
             return View(facturars.ToList());
         }
 
+        public ActionResult imprimirFactura(int? id ) {
+            VentasEntities db = new VentasEntities();
+            if (id==null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            else
+            {
+                return View(db.imprimirFactura(id));
+            }
+        }
+
         public ActionResult verFactura(int? id) {
             VentasEntities db = new VentasEntities();
             if (id == null)

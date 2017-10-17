@@ -67,3 +67,6 @@ C:\Users\w.sullivan\Documents\Visual Studio 2015\Projects\Labs Lenguajes Avanzad
 C:\Users\w.sullivan\Documents\Visual Studio 2015\Projects\Labs Lenguajes Avanzados\LenguajesAvanzados\LenguajesAvanzados\obj\Debug\LenguajesAvanzados.csprojResolveAssemblyReference.cache
 C:\Users\w.sullivan\Documents\Visual Studio 2015\Projects\Labs Lenguajes Avanzados\LenguajesAvanzados\LenguajesAvanzados\obj\Debug\LenguajesAvanzados.dll
 C:\Users\w.sullivan\Documents\Visual Studio 2015\Projects\Labs Lenguajes Avanzados\LenguajesAvanzados\LenguajesAvanzados\obj\Debug\LenguajesAvanzados.pdb
+C:\Users\w.sullivan\Documents\Visual Studio 2015\Projects\Labs Lenguajes Avanzados\LenguajesAvanzados\LenguajesAvanzados\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\w.sullivan\Documents\Visual Studio 2015\Projects\Labs Lenguajes Avanzados\LenguajesAvanzados\LenguajesAvanzados\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\w.sullivan\Documents\Visual Studio 2015\Projects\Labs Lenguajes Avanzados\LenguajesAvanzados\LenguajesAvanzados\bin\Microsoft.ReportViewer.WebForms.DLL

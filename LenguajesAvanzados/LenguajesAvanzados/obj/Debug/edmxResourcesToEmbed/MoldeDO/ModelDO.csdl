@@ -5,6 +5,9 @@
     <FunctionImport Name="verDetalleFactura" ReturnType="Collection(VentasModel.verDetalleFactura_Result)">
       <Parameter Name="ID" Mode="In" Type="Int32" />
     </FunctionImport>
+    <FunctionImport Name="imprimirFactura" ReturnType="Collection(VentasModel.imprimirFactura_Result1)">
+      <Parameter Name="IDFactura" Mode="In" Type="Int32" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="salesPerProducts_Result">
     <Property Type="String" Name="Producto" Nullable="false" />
@@ -22,5 +25,25 @@
     <Property Type="String" Name="Producto" Nullable="false" />
     <Property Type="Int32" Name="Max_Ventas" Nullable="true" />
     <Property Type="Decimal" Name="Total_Venta" Nullable="true" Precision="38" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="imprimirFactura_Result">
+    <Property Type="String" Name="Cliente" Nullable="false" />
+    <Property Type="String" Name="Vendedor" Nullable="false" />
+    <Property Type="DateTime" Name="Fecha" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="C__Factura" Nullable="false" />
+    <Property Type="String" Name="Producto" Nullable="false" />
+    <Property Type="Decimal" Name="Precio_U" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="Cantidad" Nullable="false" />
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="29" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="imprimirFactura_Result1">
+    <Property Type="String" Name="Cliente" Nullable="false" />
+    <Property Type="String" Name="Vendedor" Nullable="false" />
+    <Property Type="DateTime" Name="Fecha" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="C__Factura" Nullable="false" />
+    <Property Type="String" Name="Producto" Nullable="false" />
+    <Property Type="Decimal" Name="Precio_U" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="Cantidad" Nullable="false" />
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="29" Scale="2" />
   </ComplexType>
 </Schema>

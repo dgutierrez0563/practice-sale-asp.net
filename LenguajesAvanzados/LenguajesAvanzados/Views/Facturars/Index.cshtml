@@ -46,6 +46,7 @@
                             @*<li class="btn btn-warning btn-xs">@Html.ActionLink("Edit", "Edit", new { id = item.IDFactura })</li>*@
                             <li class="btn btn-xs" style="background-color:lightgreen"><strong>@Html.ActionLink("Facturar", "Create", "Detalles")</strong></li>
                             <li class="btn btn-xs" style="background-color:gold">@Html.ActionLink("Ver Factura", "verFactura", new { id = item.IDFactura })</li>
+                            <li class="btn btn-xs" style="background-color:lightblue">@Html.ActionLink("Imprimir Factura", "imprimirFactura", new { id = item.IDFactura})</li>
                             @*<li class="btn btn-danger btn-xs">@Html.ActionLink("Delete", "Delete", new { id = item.IDFactura })</li>*@
                         </ul>
                     </td>

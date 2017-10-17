@@ -49,6 +49,18 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -195,6 +207,12 @@
     <Compile Include="Models\Producto.cs" />
     <Compile Include="Models\Proveedor.cs" />
     <Compile Include="Models\Vendedor.cs" />
+    <Compile Include="MoldeDO\imprimirFactura_Result.cs">
+      <DependentUpon>ModelDO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MoldeDO\imprimirFactura_Result1.cs">
+      <DependentUpon>ModelDO.tt</DependentUpon>
+    </Compile>
     <Compile Include="MoldeDO\ModelDO.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -226,6 +244,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\default.css" />
+    <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\Letras\fontawesome-social-webfont.svg" />
     <Content Include="Content\Letras\fontawesome-webfont.svg" />
     <Content Include="Content\sale_tag.jpg" />
@@ -243,8 +262,6 @@
       <DependentUpon>ModelDO.edmx</DependentUpon>
       <LastGenOutput>ModelDO.cs</LastGenOutput>
     </Content>
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\Letras\fontawesome-social-webfont.eot" />
     <Content Include="Content\Letras\fontawesome-social-webfont.ttf" />
     <Content Include="Content\Letras\fontawesome-social-webfont.woff" />
@@ -264,9 +281,13 @@
     <Content Include="Content\_bootswatch.scss" />
     <Content Include="Content\_variables.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.12.4.js" />
+    <Content Include="Scripts\jquery-ui.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -347,6 +368,7 @@
     <Content Include="Views\Productoes\Index.cshtml" />
     <Content Include="Views\Facturars\verFactura.cshtml" />
     <Content Include="Views\maxVentas\Index.cshtml" />
+    <Content Include="Views\Facturars\imprimirFactura.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

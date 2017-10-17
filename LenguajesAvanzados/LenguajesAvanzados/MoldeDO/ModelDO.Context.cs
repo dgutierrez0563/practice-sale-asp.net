@@ -41,5 +41,14 @@ namespace LenguajesAvanzados.MoldeDO
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<verDetalleFactura_Result>("verDetalleFactura", iDParameter);
         }
+    
+        public virtual ObjectResult<imprimirFactura_Result1> imprimirFactura(Nullable<int> iDFactura)
+        {
+            var iDFacturaParameter = iDFactura.HasValue ?
+                new ObjectParameter("IDFactura", iDFactura) :
+                new ObjectParameter("IDFactura", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<imprimirFactura_Result1>("imprimirFactura", iDFacturaParameter);
+        }
     }
 }
